@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppReservas.ReservaPage">
+    <ContentPage.Content>
+
+        <ScrollView>
+            
+            <StackLayout>
+                
+                <StackLayout>
+                    
+
+                    <Image x:Name="logo" />
+
+                    <Label Text="Dia a reservar" FontSize="Medium" TextColor="#0450cc"
+                        FontAttributes="Bold"></Label>
+                    <BoxView HeightRequest="2" 
+                    BackgroundColor="#0450cc" 
+                    HorizontalOptions="FillAndExpand"
+                        >
+                    </BoxView>
+
+                </StackLayout>
+                <Grid x:Name="LayoutRoot" BackgroundColor="White" Margin="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition x:Name="col1"  />
+                        <ColumnDefinition x:Name="col2" />
+                        <ColumnDefinition x:Name="col3"  />
+                        <ColumnDefinition x:Name="col4" />
+
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <StackLayout x:Name="LayoutEscolhaProduto" HeightRequest="0">
+                    <Label Text="Produto a reservar" FontSize="Medium" TextColor="#0450cc"
+                        FontAttributes="Bold"></Label>
+                    <BoxView HeightRequest="2" 
+                    BackgroundColor="#0450cc" 
+                    HorizontalOptions="FillAndExpand">
+
+                    </BoxView>
+                </StackLayout>
+                <Grid x:Name="GridProdutos" BackgroundColor="White" Margin="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="produtosCol1"  />
+                        <ColumnDefinition x:Name="produtosCol2" />
+                        <ColumnDefinition x:Name="produtosCol3"  />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <StackLayout x:Name="LayoutTarifas1" HeightRequest="0">
+                    <Label Text="Tarifas a reservar" FontSize="Medium" TextColor="#0450cc"
+                        FontAttributes="Bold"></Label>
+                    <BoxView HeightRequest="2" 
+                    BackgroundColor="#0450cc" 
+                    HorizontalOptions="FillAndExpand">
+
+                    </BoxView>
+                </StackLayout>
+                
+                <StackLayout x:Name="LayoutTarifas" HeightRequest="0">
+                        
+                </StackLayout>
+               
+
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

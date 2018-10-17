@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppReservas.FinalizarReservaPage">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout>
+
+                <StackLayout>
+
+
+                    <Image x:Name="logo" />
+                    <BoxView HeightRequest="2" 
+                    BackgroundColor="#0450cc" 
+                    HorizontalOptions="FillAndExpand"
+                        >
+                    </BoxView>
+                    <Grid x:Name="GridCabecalho">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70*" />
+                            <ColumnDefinition Width="30*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Finalizar Reserva" FontSize="Medium" TextColor="#0450cc"
+                        FontAttributes="Bold" Grid.Row="1" Grid.Column="0"></Label>
+
+                    </Grid>
+
+                    <BoxView HeightRequest="2" 
+                    BackgroundColor="#0450cc" 
+                    HorizontalOptions="FillAndExpand">
+                    </BoxView>
+
+                </StackLayout>
+                <Label Text="Voucher" FontSize="18" TextColor="#0450cc" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                    <Grid x:Name="GridVoucher" Padding="5,0,5,10" BackgroundColor="#add3ff">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70*" />
+                            <ColumnDefinition Width="30*" />
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="entryVoucher" Grid.Row="1" Grid.Column="0"></Entry>
+                        <Button x:Name="btnValidarVoucher" Text="Validar" FontSize="12" BackgroundColor="#1b71c6" TextColor="White"
+                                Grid.Row="1" Grid.Column="1" Clicked="onClickedValidateVoucher"></Button>
+
+                    </Grid>
+                </Frame>
+
+                <Label Text="Dados da Reserva" FontSize="18" TextColor="#0450cc" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+
+                <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                    <StackLayout x:Name="LayoutDadosReserva" HorizontalOptions="FillAndExpand" BackgroundColor="#add3ff" Padding="5,0,5,20" >
+                        <Label x:Name="tituloAtividade" ></Label>
+                    </StackLayout>
+                </Frame>
+
+                <Label Text="Dados da cliente" FontSize="18" TextColor="#0450cc" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+
+                <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                    <StackLayout x:Name="LayoutDadosCliente" HorizontalOptions="FillAndExpand" BackgroundColor="#add3ff" Padding="5,10,5,20" >
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Entry x:Name="primeiroNome" Placeholder="Primeiro Nome"  ></Entry>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Entry x:Name="apelido" Placeholder="Apelido"></Entry>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Entry x:Name="nTelefone" Placeholder="Nº telefone"></Entry>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Entry x:Name="email" Placeholder="email "></Entry>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Entry x:Name="hotel" Placeholder="hotel"></Entry>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Entry x:Name="nQuarto" Placeholder="Nº Quarto"></Entry>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Entry x:Name="nacionalidade" Placeholder="nacionalidade" Text="PT"></Entry>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Entry x:Name="contribuite" Placeholder="contribuite"></Entry>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Entry x:Name="codPostal" Placeholder="cód. Postal"></Entry>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Entry x:Name="morada" Placeholder="morada"></Entry>
+                        </Frame>
+                        <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                            <Editor x:Name="obsInput" Text="Observações..." HeightRequest="80"/>
+                        </Frame>
+
+                    </StackLayout>
+                </Frame>
+
+                <Label Text="Modo Pagamento" FontSize="18" TextColor="#0450cc" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" Margin="5,0,5,0" HasShadow="False" OutlineColor="Gray">
+                    <StackLayout x:Name="LayoutBtnPagamento" BackgroundColor="#add3ff" HorizontalOptions="FillAndExpand" Padding="5,10,5,20">
+                        
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout x:Name="LayoutBtnFinalizar" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button x:Name="btnCancelar" Text="Cancelar" TextColor="White"  
+                            FontAttributes="Bold" FontSize="16"  
+                            BackgroundColor="#1f5fc6" HorizontalOptions="Start"
+                            Clicked="OnClickedCancelar"></Button>
+                    <Button x:Name="btnConfirmar" Text="Confirmar" TextColor="White"  
+                            FontAttributes="Bold" FontSize="16"  
+                            BackgroundColor="#1f5fc6" HorizontalOptions="End"
+                            Clicked="onClickedConfirmar"></Button>
+
+
+                    <Button x:Name="btnDebugForm" Text="Debug Teste" TextColor="White"  
+                            FontAttributes="Bold" FontSize="16"  
+                            BackgroundColor="#c60000" HorizontalOptions="End"
+                            Clicked="onClickedPreencheForm"></Button>
+                </StackLayout>
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

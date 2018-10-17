@@ -1,0 +1,1 @@
+P:\code\AppReservas\AppReservas\AppReservas.UWP\AppReservas.UWP.csproj;x86

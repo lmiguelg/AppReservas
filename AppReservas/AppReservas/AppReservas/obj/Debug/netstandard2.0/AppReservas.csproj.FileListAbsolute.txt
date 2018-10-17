@@ -1,0 +1,14 @@
+P:\code\AppReservas\AppReservas\AppReservas\bin\Debug\netstandard2.0\AppReservas.deps.json
+P:\code\AppReservas\AppReservas\AppReservas\bin\Debug\netstandard2.0\AppReservas.dll
+P:\code\AppReservas\AppReservas\AppReservas\bin\Debug\netstandard2.0\AppReservas.pdb
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\AppReservas.csprojAssemblyReference.cache
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\App.xaml.g.cs
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\FinalizarReservaPage.xaml.g.cs
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\ReservaPage.xaml.g.cs
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\AppReservas.csproj.CoreCompileInputs.cache
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\AppReservas.AssemblyInfoInputs.cache
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\AppReservas.AssemblyInfo.cs
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\XamlC.stamp
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\AppReservas.dll
+P:\code\AppReservas\AppReservas\AppReservas\obj\Debug\netstandard2.0\AppReservas.pdb

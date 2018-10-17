@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppReservas"
+             x:Class="AppReservas.MainPage">
+
+    <ContentPage.Content>
+        
+        <StackLayout x:Name="mainLayout" Orientation="Vertical" Padding="30" Spacing="40">
+            
+            <BoxView HeightRequest="50"/>
+
+            <Frame BackgroundColor="#FFFFFF" HasShadow="False" BorderColor="#000000">
+                <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                    <Image x:Name="logo" />
+
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="Entidade"></Label>
+                        <Entry x:Name="Entidade" Text="{Binding Entidade}" Placeholder="Entidade"   
+                               PlaceholderColor="White" HeightRequest="35"                           
+                               TextColor="Black" WidthRequest="300"/>
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="Utilizador"></Label>
+                        <Entry x:Name="Utilizador" Text="" Placeholder="Utilizador"   
+                           PlaceholderColor="White" HeightRequest="35"   
+                           TextColor="Black" WidthRequest="300" />
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="Password"></Label>
+                        <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Password"   
+                           PlaceholderColor="White" HeightRequest="35"   
+                           IsPassword="True"  
+                           TextColor="Black" WidthRequest="300"/>
+                    </StackLayout>
+                    
+                    <StackLayout HorizontalOptions="Center">
+                       
+                        <Button x:Name="btnLogin" Clicked="onClickedLogin"
+                            Text="Login" TextColor="White"  
+                            FontAttributes="Bold" FontSize="Medium"  
+                            BackgroundColor="#1f5fc6" WidthRequest="150"/>
+                        
+                    </StackLayout>
+                    
+                </StackLayout>
+            </Frame>
+            
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+
+</ContentPage>
